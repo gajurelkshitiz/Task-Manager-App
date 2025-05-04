@@ -47,7 +47,7 @@ Task Manager/
    ```
 2. Navigate to the project directory:
    ```bash
-   cd Task\ Manager/Starter
+   cd Task\ Manager/
    ```
 3. Install dependencies:
    ```bash
