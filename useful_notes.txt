@@ -1,0 +1,10 @@
+### Some useful routes:
+
+app.get('/api/v1/tasks') - Get all tasks
+app.post('/api/v1/tasks') - Create a new task
+app.get('/api/v1/tasks/:id') - Get a single task
+app.patch('/api/v1/tasks/:id') - Update a task
+app.delete('/api/v1/tasks/:id') - Delete a task
+app.delete('/api/v1/tasks') - Delete all tasks
+
+
