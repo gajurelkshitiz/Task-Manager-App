@@ -4,6 +4,9 @@ const tasks = require('./routes/tasks');
 // connectDB
 const connectDB = require('./db/connect');
 require('dotenv').config(); // load environment variables from .env file
+const notFound = require('./middleware/not-found'); // import the notFound middleware
+const errorHandlerMiddleware = require('./middleware/error-handler'); // import the errorHandlerMiddleware
+
 
 
 //middleware
@@ -12,7 +15,8 @@ app.use(express.static('./public')); // serve static files from the public direc
 
 /// routers and controllers setup
 app.use('/api/v1/tasks', tasks);
-
+app.use(notFound);
+app.use(errorHandlerMiddleware); // use the errorHandlerMiddleware
 
 
 
